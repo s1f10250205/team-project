@@ -1,19 +1,7 @@
 .navbar {
-    background-color: #f2b705;
+    background: linear-gradient(to right, #f3c437, #dd8500);
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
-
-.navbar a:hover {
-    background-color: #e38b00;
 }
