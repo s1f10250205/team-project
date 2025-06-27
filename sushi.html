@@ -8,71 +8,65 @@
         </title>
     </head>
     <body>
-        <h1>
-            寿司
-        </h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>ランク</th>
-                    <th>寿司ネタ</th>
-                    <th>特徴・人気の理由</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1位</td>
-                <td>サーモン</td>
-                <td>脂がのっていて甘みがあり、子どもから大人まで大人気</td>
-            </tr>
-            <tr>
-                <td>2位</td>
-                <td>中トロ（まぐろ）</td>
-                <td>脂と赤身のバランスが良く、贅沢感もある</td>
-            </tr>
-            <tr>
-                <td>3位</td>
-                <td>まぐろ（赤身）</td>
-                <td>寿司の王道。シンプルながら深い味わい</td>
-            </tr>
-            <tr>
-                <td>4位</td>
-                <td>はまち（ブリ）</td>
-                <td>コリっとした食感と脂のりが魅力</td>
-            </tr>
-            <tr>
-                <td>5位</td>
-                <td>えび</td>
-                <td>甘みがあり、加熱でも生でも人気</td>
-            </tr>
-            <tr>
-                <td>6位</td>
-                <td>いくら</td>
-                <td>プチプチ食感と濃厚なうま味で根強いファン多数</td>
-            </tr>
-            <tr>
-                <td>7位</td>
-                <td>ほたて</td>
-                <td>柔らかくて甘みがあり、女性に人気</td>
-            </tr>
-            <tr>
-                
-                
-                <td>8位</td>
-                <td>あなご</td>
-                <td>甘だれで煮付けたふわとろ食感が癖になる</td>
-            </tr>
-            <tr>
-                <td>9位</td>
-                <td>たまご焼き</td>
-                <td>子どもに人気。デザート感覚で楽しめる</td>
-            </tr>
-            <tr>
-                <td>10位</td>
-                <td>こはだ</td>
-                <td>江戸前寿司の伝統。酢締めで大人向けの味わい</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="sidebar">
+            <h1>メニュー</h1>
+            <ul>
+                <li><a href="index.html">トップページ</a></li>
+                <li><a href="tenpura.html">天ぷら</a></li>
+                <li><a href="soba.html">そば</a></li>
+            </ul>
+        </div>
+
+        <div class="ranking-content">
+            <h1 id="title">寿司ネタ人気ランキング トップ</h1>
+            <a href="#" id="top">Top</a>
+            <div class="ranking">
+                <div class="card">
+                    <div class="rank">🥇 1位</div>
+                        <div class="name">サーモン</div>
+                            <div class="reason">とろける脂と甘みで、子どもや若者に圧倒的人気</div>
+            </div>
+
+            <div class="card">
+                <div class="rank">🥈 2位</div>
+                    <div class="name">中トロ（まぐろ）</div>
+                        <div class="reason">赤身と脂のバランスが絶妙で「ごちそう感」がある</div>
+            </div>
+
+            <div class="card">
+                <div class="rank">🥉 3位</div>
+                    <div class="name">まぐろ（赤身）</div>
+                        <div class="reason">あっさりした味で老若男女に愛される寿司の王道</div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <section class="origin">
+        <h1>寿司の由来と魅力</h1>
+        <p>
+            寿司は日本の伝統的な料理であり、古くは魚の保存法として発展しました。現代では味や見た目の美しさも重視され、世界中で親しまれています。
+        </p>
+    </section>
+    <section id="salmon">
+  <h1>🥇 サーモンの詳細</h1>
+  <p>
+    サーモンは脂がのっていて、口の中でとろけるような食感が特徴です。特に若年層に人気が高く、炙りやマヨネーズ、オニオンスライスを乗せたバリエーションも豊富です。
+  </p>
+</section>
+
+<section id="chutoro">
+  <h1>🥈 中トロ（まぐろ）の詳細</h1>
+  <p>
+    中トロはまぐろの腹部の部位で、赤身のさっぱり感と脂の甘さが絶妙に融合しています。贅沢感があり、特別な一貫として人気です。
+  </p>
+</section>
+
+<section id="akami">
+  <h1>🥉 まぐろ（赤身）の詳細</h1>
+  <p>
+    赤身はヘルシーでクセがなく、まぐろ本来の旨味をダイレクトに味わえます。寿司の王道ともいえるネタで、幅広い世代に支持されています。
+  </p>
+</section>
+    </div>
     </body>
 </html>
