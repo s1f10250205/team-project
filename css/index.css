@@ -1,16 +1,57 @@
+.content{
+    float:right;
+    width:70%;
+    margin-top: 10px;
+}
+
 h1 {
     text-align: center;
     padding: 10px;
 }
 
-.content {
-    padding-left: 10px;
-}
+.title {/*親div*/
+  position: relative;/*相対配置*/
+  padding: 0;
+  margin: 0;
+  }
+
+.title h1 {
+    font-size: 70px;
+    position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  bottom: 0;
+  left: 50%;
+  }
+
+.title img {
+    height: 300px;
+    left: 0;
+    right: 0;
+  }
 
 .wa {
     font-family: "Yuji Syuku", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+h2 {
+    font-size: 30px;
+    border-bottom: solid rgb(221, 63, 63) 2px;
+    background-color: rgb(255, 253, 249);
+}
+
+p {
+    margin-left: 10px;
+}
+
+.main {
+    margin-top: 15px;
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(239, 243, 240);
+    border-radius: 20px;
+    border: solid 1px #6a9385;
 }
 
 body {
@@ -22,12 +63,6 @@ body {
 .sidebar{
     float:left;
     width:30%;
-    margin:10px 0 10px 0;
-}
-
-.content{
-    float:left;
-    width:70%;
     margin:10px 0 10px 0;
 }
 
