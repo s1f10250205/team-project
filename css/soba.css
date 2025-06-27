@@ -1,16 +1,5 @@
-.sidebar{
-    float:left;
-    width:30%;
-    margin:10px 0 10px 0;
-}
-
-.content{
-    float:left;
-    width:70%;
-    margin:10px 0 10px 0;
-}
 body {
-    font-family: 'メイリオ', Meiryo, sans-serif; 
+    font-family: sans-serif; 
     margin: 0;
     background-color: #f5f5dc;
     display: flex;
@@ -19,7 +8,7 @@ body {
 
 .sidebar {
     width: 200px; 
-    background-color: #36454F; 
+    background-color: #436677; 
     color: #fff; 
     padding: 20px;
     box-sizing: border-box; 
@@ -55,6 +44,52 @@ body {
     background-color: #5C707F;
     border-radius: 3px; 
 }
+.submenu-toggle {
+    display: none; 
+}
+.soba-main-label {
+    display: block;
+    padding: 5px 0;
+    cursor: pointer; 
+    background-color: #436677; 
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold; 
+    border-radius: 3px;
+    text-align: center;
+    padding-left: 10px; 
+}
+
+.soba-main-label:hover {
+    background-color: #5C707F; 
+}
+
+.sidebar li.current-page .soba-main-label {
+    background-color: #5C707F; 
+}
+
+.submenu-toggle:checked + .soba-main-label {
+    background-color: #5C707F; 
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; 
+}
+
+.submenu-toggle:checked + .soba-main-label + .submenu {
+    max-height: 200px; 
+}
 
 .content {
     flex-grow: 1; 
@@ -68,7 +103,7 @@ body {
 }
 
 .content h2 {
-    color: #8B4513;
+    color: #A0522D;
     font-size: 2.5em;
     margin-bottom: 20px;
     border-bottom: 3px solid #D2B48C;
@@ -123,26 +158,14 @@ body {
         margin-bottom: 15px;
     }
 
-    .sidebar ul {
-        display: flex; 
-        justify-content: center; 
-        flex-wrap: wrap; 
-    }
-
     .sidebar li {
         margin: 0 10px 10px 10px;
     }
 
-    .content {
-        margin: 15px;
-        padding: 20px;
+    .sidebar ul{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .content h2 {
-        font-size: 2em;
-    }
-
-    .content h3 {
-        font-size: 1.5em;
-    }
 }
