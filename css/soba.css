@@ -80,8 +80,7 @@ body {
     margin-left: 15px;
     font-size: 0.9em;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-
+    border-radius: 3px;    
     max-height: 0; 
     overflow: hidden;
     transition: max-height 0.5s ease-out; 
@@ -140,6 +139,29 @@ body {
 
 .content ul li {
     margin-bottom: 10px;
+}
+
+.section {
+    background-color: #fffaf0; 
+    border: 1px solid #e0d9c4; 
+    border-radius: 8px; 
+    padding: 20px;
+    margin-bottom: 30px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.section h3 {
+    margin-top: 0;
+    padding-left: 0;
+    border-left: none; 
+    border-bottom: 2px solid #D2B48C; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    margin-left: 0;
+    list-style-position: inside;
 }
 
 @media (max-width: 768px) {
