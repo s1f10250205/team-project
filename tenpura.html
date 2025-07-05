@@ -10,6 +10,14 @@
 
         <div class="sidebar">
             <button class="menu-toggle">☰ メニュー</button>
+            <div class="sidebar">  
+            <h1>メニュー</h1>
+            <ul>
+                <li><a href="#">リンク1</a></li>
+                <li><a href="#">リンク2</a></li>
+                ...
+            </ul>
+            </div>
             <h1>メニュー</h1>
             <ul>
                 <li><a href="index.html">トップページ</a></li>
@@ -62,6 +70,16 @@
                 <div class="midasi">
                     <h2>作り方</h2>
                 </div>
+                    <h3>用意するもの（1人分）</h3>
+                    <ul>
+                        <li>天ぷらの材料…</li>
+                        <li>小麦粉　　　…</li>
+                        <li></li>
+                        <li>*1 小麦粉　…　1カップ（100～110g）</li>
+                        <li>*1 卵　　　…　溶き卵にして1/2個分</li>    
+                        <li>*1 冷水　　…　1カップ（200ml）</li>
+                        *1…天ぷら衣用
+                    </ul>
                 <ol>
                     <li></li>
                 </ol>
@@ -71,3 +89,11 @@
 
     </body>
 </html>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script>
