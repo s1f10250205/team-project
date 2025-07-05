@@ -77,7 +77,7 @@ box-sizing: border-box;
   border-radius: 8px;
   margin-right: 16px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .daiiti_honbun_1 li.no-dot {
@@ -89,12 +89,34 @@ box-sizing: border-box;
 .daiiti_honbun_1.meat      { background-color: #fff6f6; }
 .daiiti_honbun_1.others    { background-color: #f9f9f9; }
 
-
+.syurui {
+    background-color: #ffffff;
+    padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 6px; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 90%;
+}
+.midasi {
+    border-bottom: 2px solid #c4a36b;
+}
 
 
 .no-dot {
   list-style: none;
 }
+.content {
+    width: 100%;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 30%;
+    min-width: 200px;
+}
+
+
+
 
 
 
@@ -110,5 +132,27 @@ box-sizing: border-box;
     100% {
         background-position: 0% 50%;
         background: linear-gradient(135deg, #f6d365, #fcb69f);
+    }
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 120px;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .content {
+        padding: 10px;
+    }
+@media (max-width: 768px) {
+  .daiiti_honbun {
+      flex-direction: column;
+      gap: 16px;
+  }
+}
+}
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
     }
 }
