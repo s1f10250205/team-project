@@ -57,6 +57,45 @@ box-sizing: border-box;
 .head h1 {
     font-family: Yu Mincho;
 }
+.daiiti_honbun {
+    display: flex;
+}
+.daiiti_honbun_1{
+    padding-right: 15px;
+}
+.category {
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 6px; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.daiiti_honbun_1 {
+  background-color: #fdf8f3;     
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  font-size: 14px;
+}
+
+.daiiti_honbun_1 li.no-dot {
+  background-color: white;       
+  font-weight: bold;
+}
+.daiiti_honbun_1.vegetable { background-color: #f4fff5; }
+.daiiti_honbun_1.seafood   { background-color: #f0f9ff; }
+.daiiti_honbun_1.meat      { background-color: #fff6f6; }
+.daiiti_honbun_1.others    { background-color: #f9f9f9; }
+
+
+
+
+.no-dot {
+  list-style: none;
+}
+
 
 
 @keyframes warmGradient {
