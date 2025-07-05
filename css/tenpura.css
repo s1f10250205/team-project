@@ -165,12 +165,10 @@ box-sizing: border-box;
   .sidebar {
     width: 180px;
   }
-
-  .content {
-    margin-left: 0;
-  }
 }
-
+.youi_1 {
+  font-size: 20px;
+}
 
 
 
@@ -211,4 +209,14 @@ box-sizing: border-box;
     .content {
         width: 100%;
     }
+}
+@media (min-width: 769px) {
+  .sidebar {
+    transform: translateX(0); /* 表示する */
+    position: static;
+  }
+
+  .menu-toggle {
+    display: none; /* トグルボタンを非表示 */
+  }
 }
